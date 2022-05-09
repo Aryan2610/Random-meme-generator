@@ -1,0 +1,95 @@
+:root {
+  --grey: #d9d9d9;
+  --black: #292929;
+  --maroon: #c3083f;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "sans-serif";
+  font-weight: 800;
+  font-size: 1.6rem;
+  padding: 1.25rem;
+  background-color: var(--black);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+h1 {
+  font-family: "Oswald", sans-serif;
+  color: var(--maroon);
+  position: absolute;
+  top: 7%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+h2 {
+  font-family: "Montserrat Alternates", sans-serif;
+  color: var(--grey);
+  position: absolute;
+  top: 13%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+.meme {
+  margin-top: 8rem;
+}
+.btn {
+  margin-top: 2rem;
+  font-size: 2rem;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 1.3rem 5rem 1.3rem;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+}
+.btn::after {
+  content: "";
+  background-color: #ffe54c;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 0.7rem;
+  left: 0.7rem;
+  transition: 0.2s all;
+  -webkit-transition: 0.2s all;
+  -moz-transition: 0.2s all;
+  -ms-transition: 0.2s all;
+  -o-transition: 0.2s all;
+}
+.btn:hover::after {
+  top: 0rem;
+  left: 0rem;
+}
+@media only screen and (max-width: 750px) {
+  h1 {
+    font-size: 2rem;
+    top: 3%;
+  }
+  h2 {
+    font-size: 1rem;
+    top: 8%;
+  }
+}
