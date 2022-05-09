@@ -24,8 +24,8 @@ Generate and see random memes when they click on show memes
 
 ### Links
 
-- Solution URL: (
-- Live Site URL: 
+- Solution URL: (https://github.com/Aryan2610/Random-meme-generator)
+- Live Site URL: (https://aryan2610.github.io/Random-meme-generator)
 
 
 
